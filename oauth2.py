@@ -11,5 +11,3 @@ def get_current_user(data:str =Depends(oauth2_scheme)):
     )
     return jwttoken.verify_token(data,credentials_exception)
 
-def test_deploy():
-    return 1==1
