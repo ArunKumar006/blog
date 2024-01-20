@@ -1,0 +1,11 @@
+name:CI/CD for FastAPI
+on:
+  push:
+    branches:
+      -main
+jobs:
+  build:
+    run-on:ubuntu-latest
+
+    steps:
+    
