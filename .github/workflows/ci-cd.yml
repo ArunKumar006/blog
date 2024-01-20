@@ -32,7 +32,7 @@ jobs:
     needs: build
     steps:
       - name: Deploy to PythonAnywhere
-        uses: ArunKumar006/blog.git@v2
+        uses: blog.git@v2
         with:
           username: ${{ secrets.PA_USERNAME }}
           password: ${{ secrets.PA_PASSWORD }}
