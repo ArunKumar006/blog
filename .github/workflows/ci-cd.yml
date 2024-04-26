@@ -33,4 +33,5 @@ jobs:
     steps:
       - name: Deploy
         run:
+          export PATH=$PATH:$HOME/.local/bin
           python -m uvicorn main:app --reload 
