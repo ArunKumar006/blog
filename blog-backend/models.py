@@ -24,3 +24,7 @@ class User(Base):
     blogs=relationship("Blog",back_populates="creator")
 
 
+class Rewards(Base):
+    __tablename__="Rewards"
+    id = Column(Integer,primary_key=True,index=True)
+    name = Column(String)

@@ -16,3 +16,5 @@ def login(request:OAuth2PasswordRequestForm = Depends(),db:Session=Depends(datab
                     detail=f"Incorrect password")
     access_token = jwttoken.create_access_token(data={"sub": user.email})
     return {"access_token": access_token, "token_type": "bearer"}
+
+
